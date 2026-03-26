@@ -28,7 +28,7 @@ def seed_everything(seed):
 def get_args():
     parser = argparse.ArgumentParser()
     arg = parser.add_argument
-    arg("-c", "--config_path", type=Path, help="Path to the config.", default='config/loveda/s2dcb_sfa_r34.py')
+    arg("-c", "--config_path", type=Path, help="Path to the config.", default='config/loveda/s2dcb_r18.py')
     return parser.parse_args()
 
 class Supervision_Train(pl.LightningModule):
